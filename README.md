@@ -22,9 +22,7 @@ To do:
 
 Flutter version: 1.22.6
 
-Build: clone the repo and
-
-flutter build apk --target-platform android-arm64 --release
+Build: clone the repo and run `flutter build apk --target-platform android-arm64 --release`
 
 apk file can be found in the root of the project
 

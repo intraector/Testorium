@@ -95,7 +95,7 @@ class PersonDetails extends StatelessWidget {
                         ),
                         data: (data) => UserInfoLine(
                           label: S.of(context).userOrigin,
-                          data: data.user.origin,
+                          data: data.user.gender,
                         ),
                       );
                     },

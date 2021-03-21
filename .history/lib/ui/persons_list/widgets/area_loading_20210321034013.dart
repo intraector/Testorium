@@ -9,6 +9,7 @@ class AreaLoading extends StatelessWidget {
       itemCount: 8,
       itemBuilder: (context, index) {
         return UserCardShimmer(
+          enabled: true,
           margin: EdgeInsets.symmetric(horizontal: 25.0),
         );
       },

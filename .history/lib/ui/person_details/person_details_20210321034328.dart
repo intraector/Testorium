@@ -93,9 +93,8 @@ class PersonDetails extends StatelessWidget {
                           label: S.of(context).userOrigin,
                           data: error.msg,
                         ),
-                        data: (data) => UserInfoLine(
+                        data: (data) => UserInfoLineShimmer(
                           label: S.of(context).userOrigin,
-                          data: data.user.origin,
                         ),
                       );
                     },
@@ -115,10 +114,9 @@ class PersonDetails extends StatelessWidget {
                           label: S.of(context).userLocation,
                           data: error.msg,
                         ),
-                        data: (data) => UserInfoLine(
+                        data: (data) => UserInfoLineShimmer(
                           label: S.of(context).userLocation,
-                          data: data.user.location,
-                          withDivider: false,
+                          withDivider: true,
                         ),
                       );
                     },

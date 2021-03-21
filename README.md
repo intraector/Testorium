@@ -3,6 +3,8 @@
 
 The project is a reference sample of a new Flutter app
 
+Features:
+
  <ul>
   <li>internationalization</li>
   <li>routing (auto_route)</li>

@@ -22,7 +22,7 @@ To do:
   <li>add permissions check</li>
 </ul> 
 
-Flutter version: 1.22.6
+Flutter version: `1.22.6`
 
 Build: clone the repo and run `flutter build apk --target-platform android-arm64 --release`
 

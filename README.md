@@ -1,7 +1,7 @@
 # Testorium
 
 
-Этот проект является эталонным шаблоном для нового приложения.
+The project is a reference sample of a new Flutter app
 
  <ul>
   <li>internationalization</li>
@@ -20,7 +20,14 @@ To do:
   <li>add permissions check</li>
 </ul> 
 
+Flutter version: 1.22.6
 
+Build: flutter build apk --target-platform android-arm64 --release
+
+apk file can be found in the root of the project
+
+
+<br>
 
 <img src="screenshot1.png" width="200"><img src="screenshot2.png" width="200"><img src="screenshot3.png" width="200">
 

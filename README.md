@@ -12,6 +12,7 @@ Features:
   <li>themes changing on the fly</li>
   <li>fonts</li>
   <li>shimmer effect while loading</li>
+  <li>linter rules</li> 
 </ul> 
 
 To do:

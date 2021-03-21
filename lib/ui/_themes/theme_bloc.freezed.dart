@@ -27,7 +27,6 @@ const $StateTheme = _$StateThemeTearOff();
 
 /// @nodoc
 mixin _$StateTheme {
-// String uuid,
   AppTheme get theme;
 
   @JsonKey(ignore: true)
@@ -91,7 +90,7 @@ class __$CurrentCopyWithImpl<$Res> extends _$StateThemeCopyWithImpl<$Res>
 class _$_Current implements _Current {
   const _$_Current({@required this.theme}) : assert(theme != null);
 
-  @override // String uuid,
+  @override
   final AppTheme theme;
 
   @override
@@ -120,7 +119,7 @@ class _$_Current implements _Current {
 abstract class _Current implements StateTheme {
   const factory _Current({@required AppTheme theme}) = _$_Current;
 
-  @override // String uuid,
+  @override
   AppTheme get theme;
   @override
   @JsonKey(ignore: true)

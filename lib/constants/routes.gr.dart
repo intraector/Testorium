@@ -5,8 +5,9 @@
 // **************************************************************************
 
 import 'package:auto_route/auto_route.dart' as _i1;
-import 'package:flutter/material.dart' as _i4;
+import 'package:flutter/cupertino.dart' as _i4;
 
+import '../core/models/user.dart' as _i5;
 import '../ui/person_details/person_details.dart' as _i3;
 import '../ui/persons_list/screen_persons_list.dart' as _i2;
 
@@ -21,7 +22,9 @@ class AppRouter extends _i1.RootStackRouter {
           entry: entry, child: _i2.PersonsList(key: route.key));
     },
     PersonDetails.name: (entry) {
-      return _i1.AdaptivePage(entry: entry, child: _i3.PersonDetails());
+      var route = entry.routeData.as<PersonDetails>();
+      return _i1.AdaptivePage(
+          entry: entry, child: _i3.PersonDetails(route.user));
     }
   };
 
@@ -48,9 +51,13 @@ class PersonsList extends _i1.PageRouteInfo {
 }
 
 class PersonDetails extends _i1.PageRouteInfo {
-  const PersonDetails() : super(name, path: '/person-details');
+  PersonDetails({this.user}) : super(name, path: '/person-details');
 
-  PersonDetails.fromMatch(_i1.RouteMatch match) : super.fromMatch(match);
+  PersonDetails.fromMatch(_i1.RouteMatch match)
+      : user = null,
+        super.fromMatch(match);
+
+  final _i5.User user;
 
   static const String name = 'PersonDetails';
 }

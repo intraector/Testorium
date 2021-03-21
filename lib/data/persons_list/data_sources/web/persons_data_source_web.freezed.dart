@@ -10,8 +10,8 @@ part of 'persons_data_source_web.dart';
 T _$identity<T>(T value) => value;
 
 /// @nodoc
-class _$StateAuthStatusDataSourceWebTearOff {
-  const _$StateAuthStatusDataSourceWebTearOff();
+class _$StatePersonsDataSourceWebTearOff {
+  const _$StatePersonsDataSourceWebTearOff();
 
 // ignore: unused_element
   _LoadInProgress loadInProgress(double progress) {
@@ -55,10 +55,10 @@ class _$StateAuthStatusDataSourceWebTearOff {
 
 /// @nodoc
 // ignore: unused_element
-const $StateAuthStatusDataSourceWeb = _$StateAuthStatusDataSourceWebTearOff();
+const $StatePersonsDataSourceWeb = _$StatePersonsDataSourceWebTearOff();
 
 /// @nodoc
-mixin _$StateAuthStatusDataSourceWeb {
+mixin _$StatePersonsDataSourceWeb {
   @optionalTypeArgs
   TResult when<TResult extends Object>({
     @required TResult loadInProgress(double progress),
@@ -94,21 +94,20 @@ mixin _$StateAuthStatusDataSourceWeb {
 }
 
 /// @nodoc
-abstract class $StateAuthStatusDataSourceWebCopyWith<$Res> {
-  factory $StateAuthStatusDataSourceWebCopyWith(
-          StateAuthStatusDataSourceWeb value,
-          $Res Function(StateAuthStatusDataSourceWeb) then) =
-      _$StateAuthStatusDataSourceWebCopyWithImpl<$Res>;
+abstract class $StatePersonsDataSourceWebCopyWith<$Res> {
+  factory $StatePersonsDataSourceWebCopyWith(StatePersonsDataSourceWeb value,
+          $Res Function(StatePersonsDataSourceWeb) then) =
+      _$StatePersonsDataSourceWebCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$StateAuthStatusDataSourceWebCopyWithImpl<$Res>
-    implements $StateAuthStatusDataSourceWebCopyWith<$Res> {
-  _$StateAuthStatusDataSourceWebCopyWithImpl(this._value, this._then);
+class _$StatePersonsDataSourceWebCopyWithImpl<$Res>
+    implements $StatePersonsDataSourceWebCopyWith<$Res> {
+  _$StatePersonsDataSourceWebCopyWithImpl(this._value, this._then);
 
-  final StateAuthStatusDataSourceWeb _value;
+  final StatePersonsDataSourceWeb _value;
   // ignore: unused_field
-  final $Res Function(StateAuthStatusDataSourceWeb) _then;
+  final $Res Function(StatePersonsDataSourceWeb) _then;
 }
 
 /// @nodoc
@@ -121,7 +120,7 @@ abstract class _$LoadInProgressCopyWith<$Res> {
 
 /// @nodoc
 class __$LoadInProgressCopyWithImpl<$Res>
-    extends _$StateAuthStatusDataSourceWebCopyWithImpl<$Res>
+    extends _$StatePersonsDataSourceWebCopyWithImpl<$Res>
     implements _$LoadInProgressCopyWith<$Res> {
   __$LoadInProgressCopyWithImpl(
       _LoadInProgress _value, $Res Function(_LoadInProgress) _then)
@@ -149,7 +148,7 @@ class _$_LoadInProgress implements _LoadInProgress {
 
   @override
   String toString() {
-    return 'StateAuthStatusDataSourceWeb.loadInProgress(progress: $progress)';
+    return 'StatePersonsDataSourceWeb.loadInProgress(progress: $progress)';
   }
 
   @override
@@ -233,7 +232,7 @@ class _$_LoadInProgress implements _LoadInProgress {
   }
 }
 
-abstract class _LoadInProgress implements StateAuthStatusDataSourceWeb {
+abstract class _LoadInProgress implements StatePersonsDataSourceWeb {
   const factory _LoadInProgress(double progress) = _$_LoadInProgress;
 
   double get progress;
@@ -254,7 +253,7 @@ abstract class _$DataCopyWith<$Res> {
 
 /// @nodoc
 class __$DataCopyWithImpl<$Res>
-    extends _$StateAuthStatusDataSourceWebCopyWithImpl<$Res>
+    extends _$StatePersonsDataSourceWebCopyWithImpl<$Res>
     implements _$DataCopyWith<$Res> {
   __$DataCopyWithImpl(_Data _value, $Res Function(_Data) _then)
       : super(_value, (v) => _then(v as _Data));
@@ -295,7 +294,7 @@ class _$_Data implements _Data {
 
   @override
   String toString() {
-    return 'StateAuthStatusDataSourceWeb.data(statusCode: $statusCode, statusMsg: $statusMsg, data: $data, extra: $extra)';
+    return 'StatePersonsDataSourceWeb.data(statusCode: $statusCode, statusMsg: $statusMsg, data: $data, extra: $extra)';
   }
 
   @override
@@ -390,7 +389,7 @@ class _$_Data implements _Data {
   }
 }
 
-abstract class _Data implements StateAuthStatusDataSourceWeb {
+abstract class _Data implements StatePersonsDataSourceWeb {
   const factory _Data(
       {int statusCode,
       String statusMsg,
@@ -420,7 +419,7 @@ abstract class _$ErrorCopyWith<$Res> {
 
 /// @nodoc
 class __$ErrorCopyWithImpl<$Res>
-    extends _$StateAuthStatusDataSourceWebCopyWithImpl<$Res>
+    extends _$StatePersonsDataSourceWebCopyWithImpl<$Res>
     implements _$ErrorCopyWith<$Res> {
   __$ErrorCopyWithImpl(_Error _value, $Res Function(_Error) _then)
       : super(_value, (v) => _then(v as _Error));
@@ -479,7 +478,7 @@ class _$_Error implements _Error {
 
   @override
   String toString() {
-    return 'StateAuthStatusDataSourceWeb.error(statusCode: $statusCode, msg: $msg, statusMsg: $statusMsg, reasonMsg: $reasonMsg, data: $data, extra: $extra)';
+    return 'StatePersonsDataSourceWeb.error(statusCode: $statusCode, msg: $msg, statusMsg: $statusMsg, reasonMsg: $reasonMsg, data: $data, extra: $extra)';
   }
 
   @override
@@ -581,7 +580,7 @@ class _$_Error implements _Error {
   }
 }
 
-abstract class _Error implements StateAuthStatusDataSourceWeb {
+abstract class _Error implements StatePersonsDataSourceWeb {
   const factory _Error(
       {int statusCode,
       String msg,

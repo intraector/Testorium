@@ -64,6 +64,46 @@ class S {
       args: [],
     );
   }
+
+  /// `Origin location`
+  String get userOrigin {
+    return Intl.message(
+      'Origin location',
+      name: 'userOrigin',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Gender`
+  String get userGender {
+    return Intl.message(
+      'Gender',
+      name: 'userGender',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Location`
+  String get userLocation {
+    return Intl.message(
+      'Location',
+      name: 'userLocation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Loading..`
+  String get loadInProgress {
+    return Intl.message(
+      'Loading..',
+      name: 'loadInProgress',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -22,7 +22,11 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
     "errorGeneral" : MessageLookupByLibrary.simpleMessage("Something went wrong :-("),
+    "loadInProgress" : MessageLookupByLibrary.simpleMessage("Loading.."),
     "personsListTitle" : MessageLookupByLibrary.simpleMessage("Rick and Morty"),
-    "tryAgain" : MessageLookupByLibrary.simpleMessage("Try Again")
+    "tryAgain" : MessageLookupByLibrary.simpleMessage("Try Again"),
+    "userGender" : MessageLookupByLibrary.simpleMessage("Gender"),
+    "userLocation" : MessageLookupByLibrary.simpleMessage("Location"),
+    "userOrigin" : MessageLookupByLibrary.simpleMessage("Origin location")
   };
 }

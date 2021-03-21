@@ -8,8 +8,6 @@ class PersonsConverterWeb {
       status: map['status'] ?? '',
       species: map['species'] ?? '',
       gender: map['gender'] ?? '',
-      origin: (map['origin'] ?? {})['name'],
-      location: (map['origin'] ?? {})['name'],
       image: map['image'],
     );
   }

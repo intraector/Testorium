@@ -1,7 +1,7 @@
 # Testorium
 
 
-The project is a reference sample of a new Flutter app
+The project is a reference sample of a CRUD Flutter app
 
 Features:
 

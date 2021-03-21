@@ -12,6 +12,13 @@
   <li>shimmer effect while loading</li>
 </ul> 
 
+To do:
+
+ <ul>
+  <li>add bottom bar</li>
+  <li>add connectivity check</li>
+  <li>add permissions check</li>
+</ul> 
 
 
 

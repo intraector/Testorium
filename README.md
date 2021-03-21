@@ -7,7 +7,9 @@
   <li>internationalization</li>
   <li>routing (auto_route)</li>
   <li>bloc, get_it</li>
-  <li>смена тем на лету</li>
+  <li>themes changing on the fly</li>
+  <li>fonts</li>
+  <li>shimmer effect while loading</li>
 </ul> 
 
 

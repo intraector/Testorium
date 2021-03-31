@@ -26,7 +26,7 @@ class PersonsDataSourceWeb {
   Stream<StatePersonsDataSourceWeb> getPersonsList() {
     StreamController<StatePersonsDataSourceWeb> output;
     void doWork() async {
-      output.sink.add(const StatePersonsDataSourceWeb.loadInProgress(0.0));
+      output.sink.add(StatePersonsDataSourceWeb.loadInProgress(0.0));
       try {
         final response = await _dio.get(
           '/api/character?page=1',

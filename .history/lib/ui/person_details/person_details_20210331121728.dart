@@ -61,7 +61,7 @@ class PersonDetails extends StatelessWidget {
                             Container(
                               width: 13.0,
                               height: 13.0,
-                              margin: const EdgeInsets.only(right: 10.0),
+                              margin: EdgeInsets.only(right: 10.0),
                               decoration: BoxDecoration(
                                   shape: BoxShape.circle,
                                   color: _statusIndicatorColor(user.status),
@@ -81,11 +81,11 @@ class PersonDetails extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 39.0),
+                  SizedBox(height: 39.0),
                   BlocBuilder<PersonDetailsRepository, StatePersonDetailsRepository>(
                     builder: (context, state) {
                       return state.map(
-                        initial: (_) => const SizedBox.shrink(),
+                        initial: (_) => SizedBox.shrink(),
                         loadInProgress: (_) => UserInfoLineShimmer(
                           label: S.of(context).userOrigin,
                         ),
@@ -107,7 +107,7 @@ class PersonDetails extends StatelessWidget {
                   BlocBuilder<PersonDetailsRepository, StatePersonDetailsRepository>(
                     builder: (context, state) {
                       return state.map(
-                        initial: (_) => const SizedBox.shrink(),
+                        initial: (_) => SizedBox.shrink(),
                         loadInProgress: (_) => UserInfoLineShimmer(
                           label: S.of(context).userLocation,
                         ),
@@ -139,7 +139,7 @@ class PersonDetails extends StatelessWidget {
         output = Colors.red;
         break;
       case 'Alive':
-        output = const Color(0xff00c48c);
+        output = Color(0xff00c48c);
         break;
       default:
         output = Colors.grey;

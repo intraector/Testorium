@@ -10,8 +10,8 @@ part of 'theme_bloc.dart';
 T _$identity<T>(T value) => value;
 
 /// @nodoc
-class _$StateThemeTearOff {
-  const _$StateThemeTearOff();
+class _$StateBlocThemeTearOff {
+  const _$StateBlocThemeTearOff();
 
 // ignore: unused_element
   _Current call({@required AppTheme theme}) {
@@ -23,31 +23,32 @@ class _$StateThemeTearOff {
 
 /// @nodoc
 // ignore: unused_element
-const $StateTheme = _$StateThemeTearOff();
+const $StateBlocTheme = _$StateBlocThemeTearOff();
 
 /// @nodoc
-mixin _$StateTheme {
+mixin _$StateBlocTheme {
   AppTheme get theme;
 
   @JsonKey(ignore: true)
-  $StateThemeCopyWith<StateTheme> get copyWith;
+  $StateBlocThemeCopyWith<StateBlocTheme> get copyWith;
 }
 
 /// @nodoc
-abstract class $StateThemeCopyWith<$Res> {
-  factory $StateThemeCopyWith(
-          StateTheme value, $Res Function(StateTheme) then) =
-      _$StateThemeCopyWithImpl<$Res>;
+abstract class $StateBlocThemeCopyWith<$Res> {
+  factory $StateBlocThemeCopyWith(
+          StateBlocTheme value, $Res Function(StateBlocTheme) then) =
+      _$StateBlocThemeCopyWithImpl<$Res>;
   $Res call({AppTheme theme});
 }
 
 /// @nodoc
-class _$StateThemeCopyWithImpl<$Res> implements $StateThemeCopyWith<$Res> {
-  _$StateThemeCopyWithImpl(this._value, this._then);
+class _$StateBlocThemeCopyWithImpl<$Res>
+    implements $StateBlocThemeCopyWith<$Res> {
+  _$StateBlocThemeCopyWithImpl(this._value, this._then);
 
-  final StateTheme _value;
+  final StateBlocTheme _value;
   // ignore: unused_field
-  final $Res Function(StateTheme) _then;
+  final $Res Function(StateBlocTheme) _then;
 
   @override
   $Res call({
@@ -60,7 +61,8 @@ class _$StateThemeCopyWithImpl<$Res> implements $StateThemeCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$CurrentCopyWith<$Res> implements $StateThemeCopyWith<$Res> {
+abstract class _$CurrentCopyWith<$Res>
+    implements $StateBlocThemeCopyWith<$Res> {
   factory _$CurrentCopyWith(_Current value, $Res Function(_Current) then) =
       __$CurrentCopyWithImpl<$Res>;
   @override
@@ -68,7 +70,7 @@ abstract class _$CurrentCopyWith<$Res> implements $StateThemeCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$CurrentCopyWithImpl<$Res> extends _$StateThemeCopyWithImpl<$Res>
+class __$CurrentCopyWithImpl<$Res> extends _$StateBlocThemeCopyWithImpl<$Res>
     implements _$CurrentCopyWith<$Res> {
   __$CurrentCopyWithImpl(_Current _value, $Res Function(_Current) _then)
       : super(_value, (v) => _then(v as _Current));
@@ -95,7 +97,7 @@ class _$_Current implements _Current {
 
   @override
   String toString() {
-    return 'StateTheme(theme: $theme)';
+    return 'StateBlocTheme(theme: $theme)';
   }
 
   @override
@@ -116,7 +118,7 @@ class _$_Current implements _Current {
       __$CurrentCopyWithImpl<_Current>(this, _$identity);
 }
 
-abstract class _Current implements StateTheme {
+abstract class _Current implements StateBlocTheme {
   const factory _Current({@required AppTheme theme}) = _$_Current;
 
   @override
@@ -127,8 +129,8 @@ abstract class _Current implements StateTheme {
 }
 
 /// @nodoc
-class _$EventThemeTearOff {
-  const _$EventThemeTearOff();
+class _$EventBlocThemeTearOff {
+  const _$EventBlocThemeTearOff();
 
 // ignore: unused_element
   _EventMain main() {
@@ -138,10 +140,10 @@ class _$EventThemeTearOff {
 
 /// @nodoc
 // ignore: unused_element
-const $EventTheme = _$EventThemeTearOff();
+const $EventBlocTheme = _$EventBlocThemeTearOff();
 
 /// @nodoc
-mixin _$EventTheme {
+mixin _$EventBlocTheme {
   @optionalTypeArgs
   TResult when<TResult extends Object>({
     @required TResult main(),
@@ -163,19 +165,20 @@ mixin _$EventTheme {
 }
 
 /// @nodoc
-abstract class $EventThemeCopyWith<$Res> {
-  factory $EventThemeCopyWith(
-          EventTheme value, $Res Function(EventTheme) then) =
-      _$EventThemeCopyWithImpl<$Res>;
+abstract class $EventBlocThemeCopyWith<$Res> {
+  factory $EventBlocThemeCopyWith(
+          EventBlocTheme value, $Res Function(EventBlocTheme) then) =
+      _$EventBlocThemeCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$EventThemeCopyWithImpl<$Res> implements $EventThemeCopyWith<$Res> {
-  _$EventThemeCopyWithImpl(this._value, this._then);
+class _$EventBlocThemeCopyWithImpl<$Res>
+    implements $EventBlocThemeCopyWith<$Res> {
+  _$EventBlocThemeCopyWithImpl(this._value, this._then);
 
-  final EventTheme _value;
+  final EventBlocTheme _value;
   // ignore: unused_field
-  final $Res Function(EventTheme) _then;
+  final $Res Function(EventBlocTheme) _then;
 }
 
 /// @nodoc
@@ -186,7 +189,7 @@ abstract class _$EventMainCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$EventMainCopyWithImpl<$Res> extends _$EventThemeCopyWithImpl<$Res>
+class __$EventMainCopyWithImpl<$Res> extends _$EventBlocThemeCopyWithImpl<$Res>
     implements _$EventMainCopyWith<$Res> {
   __$EventMainCopyWithImpl(_EventMain _value, $Res Function(_EventMain) _then)
       : super(_value, (v) => _then(v as _EventMain));
@@ -201,7 +204,7 @@ class _$_EventMain implements _EventMain {
 
   @override
   String toString() {
-    return 'EventTheme.main()';
+    return 'EventBlocTheme.main()';
   }
 
   @override
@@ -257,6 +260,6 @@ class _$_EventMain implements _EventMain {
   }
 }
 
-abstract class _EventMain implements EventTheme {
+abstract class _EventMain implements EventBlocTheme {
   const factory _EventMain() = _$_EventMain;
 }

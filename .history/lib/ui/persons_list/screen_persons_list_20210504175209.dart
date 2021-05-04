@@ -1,7 +1,7 @@
-import 'package:Testorium/data/persons/repository/persons_repository.dart';
-import 'package:Testorium/generated/l10n.dart';
-import 'package:Testorium/services/service_locator.dart';
-import 'package:Testorium/ui/person_details/person_details.dart';
+import 'package:testorium/data/persons/repository/persons_repository.dart';
+import 'package:testorium/generated/l10n.dart';
+import 'package:testorium/services/service_locator.dart';
+import 'package:testorium/ui/person_details/person_details.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:auto_route/auto_route.dart';

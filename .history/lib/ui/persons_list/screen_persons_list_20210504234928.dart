@@ -1,6 +1,6 @@
-import 'package:Testorium/common/routes.gr.dart';
-import 'package:Testorium/bloc/persons/bloc_persons.dart';
-import 'package:Testorium/generated/l10n.dart';
+import 'package:testorium/common/routes.gr.dart';
+import 'package:testorium/bloc/persons/bloc_persons.dart';
+import 'package:testorium/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:auto_route/auto_route.dart';

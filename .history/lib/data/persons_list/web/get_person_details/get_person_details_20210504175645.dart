@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:Testorium/_common/app_dio.dart';
-import 'package:Testorium/constants/app_dio.dart';
-import 'package:Testorium/core/models/person.dart';
-import 'package:Testorium/generated/l10n.dart';
+import 'package:testorium/_common/app_dio.dart';
+import 'package:testorium/constants/app_dio.dart';
+import 'package:testorium/core/models/person.dart';
+import 'package:testorium/generated/l10n.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';

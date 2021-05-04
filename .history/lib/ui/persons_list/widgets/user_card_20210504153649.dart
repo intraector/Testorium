@@ -1,6 +1,6 @@
-import 'package:Testorium/core/models/person.dart';
-import 'package:Testorium/ui/_common/user_avatar.dart';
-import 'package:Testorium/ui/_themes/theme_bloc.dart';
+import 'package:testorium/core/models/person.dart';
+import 'package:testorium/ui/_common/user_avatar.dart';
+import 'package:testorium/ui/_themes/theme_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

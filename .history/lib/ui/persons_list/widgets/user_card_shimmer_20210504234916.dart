@@ -1,4 +1,4 @@
-import 'package:Testorium/common/app_screen.dart';
+import 'package:testorium/common/app_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 

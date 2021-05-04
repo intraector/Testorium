@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:Testorium/generated/l10n.dart';
+import 'package:testorium/generated/l10n.dart';
 import 'package:dio/dio.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:logger/logger.dart';

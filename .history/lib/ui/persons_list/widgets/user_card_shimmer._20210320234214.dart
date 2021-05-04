@@ -1,5 +1,5 @@
-import 'package:Testorium/core/models/user.dart';
-import 'package:Testorium/ui/_themes/theme_bloc.dart';
+import 'package:testorium/core/models/user.dart';
+import 'package:testorium/ui/_themes/theme_bloc.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

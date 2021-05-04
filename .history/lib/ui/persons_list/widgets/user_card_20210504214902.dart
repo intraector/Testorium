@@ -1,7 +1,7 @@
-import 'package:Testorium/dto/person/person.dart';
-import 'package:Testorium/dto/person/person.dart';
-import 'package:Testorium/ui/_widgets/user_avatar.dart';
-import 'package:Testorium/ui/_themes/theme_bloc.dart';
+import 'package:testorium/dto/person/person.dart';
+import 'package:testorium/dto/person/person.dart';
+import 'package:testorium/ui/_widgets/user_avatar.dart';
+import 'package:testorium/ui/_themes/theme_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

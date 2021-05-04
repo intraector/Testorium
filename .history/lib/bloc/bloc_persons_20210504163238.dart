@@ -1,6 +1,6 @@
-import 'package:Testorium/core/models/person.dart';
-import 'package:Testorium/data/persons/repository/persons_repository.dart';
-import 'package:Testorium/data/persons/web/persons_repository_web.dart';
+import 'package:testorium/core/models/person.dart';
+import 'package:testorium/data/persons/repository/persons_repository.dart';
+import 'package:testorium/data/persons/web/persons_repository_web.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 

@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:Testorium/_common/app_settings.dart';
-import 'package:Testorium/generated/l10n.dart';
+import 'package:testorium/_common/app_settings.dart';
+import 'package:testorium/generated/l10n.dart';
 import 'package:dio/dio.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:logger/logger.dart';

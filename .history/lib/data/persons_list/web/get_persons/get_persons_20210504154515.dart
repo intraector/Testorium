@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:Testorium/core/models/person.dart';
-import 'package:Testorium/generated/l10n.dart';
+import 'package:testorium/core/models/person.dart';
+import 'package:testorium/generated/l10n.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
@@ -30,9 +30,8 @@ class NewsCommandGetNews extends Cubit<StateCommandGetPersons> {
       );
       if (response?.statusCode == 200) {
         if (response.data is List) {
-          var _events = response.data
-              .map<Person>((item) => Person.fromJson(item, url: backendUrl))
-              .toList();
+          var _events =
+              response.data.map<Person>((item) => Person.fromJson(item, url: backendUrl)).toList();
           emit(StateCommandGetPersons.data(_events));
         } else if (response.data is Map) {
           var _event = Convert.mapToNews(response.data, url: backendUrl);

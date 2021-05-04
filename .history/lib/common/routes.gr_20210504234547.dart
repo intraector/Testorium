@@ -7,9 +7,9 @@
 import 'package:auto_route/auto_route.dart' as _i1;
 import 'package:flutter/cupertino.dart' as _i5;
 import 'package:flutter/material.dart' as _i2;
-import 'package:Testorium/dto/person/person.dart' as _i6;
-import 'package:Testorium/ui/person_details/person_details.dart' as _i4;
-import 'package:Testorium/ui/persons_list/screen_persons_list.dart' as _i3;
+import 'package:testorium/dto/person/person.dart' as _i6;
+import 'package:testorium/ui/person_details/person_details.dart' as _i4;
+import 'package:testorium/ui/persons_list/screen_persons_list.dart' as _i3;
 
 class AppRouter extends _i1.RootStackRouter {
   AppRouter([_i2.GlobalKey<_i2.NavigatorState>? navigatorKey]) : super(navigatorKey);

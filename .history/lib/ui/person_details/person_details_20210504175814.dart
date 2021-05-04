@@ -1,10 +1,10 @@
-import 'package:Testorium/core/models/person.dart';
-import 'package:Testorium/data/persons/web/get_person_details/get_person_details.dart';
-import 'package:Testorium/data/persons/web/persons_repository_web.dart';
-import 'package:Testorium/generated/l10n.dart';
-import 'package:Testorium/ui/_common/user_avatar.dart';
-import 'package:Testorium/ui/_themes/theme_bloc.dart';
-import 'package:Testorium/ui/person_details/widgets/user_info_line_shimmer.dart';
+import 'package:testorium/core/models/person.dart';
+import 'package:testorium/data/persons/web/get_person_details/get_person_details.dart';
+import 'package:testorium/data/persons/web/persons_repository_web.dart';
+import 'package:testorium/generated/l10n.dart';
+import 'package:testorium/ui/_common/user_avatar.dart';
+import 'package:testorium/ui/_themes/theme_bloc.dart';
+import 'package:testorium/ui/person_details/widgets/user_info_line_shimmer.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';

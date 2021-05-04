@@ -1,4 +1,4 @@
-import 'package:Testorium/data/persons/repository/persons_repository.dart';
+import 'package:testorium/data/persons/repository/persons_repository.dart';
 import 'package:get_it/get_it.dart';
 
 final getIt = GetIt.instance;

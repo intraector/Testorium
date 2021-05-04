@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:Testorium/core/models/user.dart';
-import 'package:Testorium/generated/l10n.dart';
+import 'package:testorium/core/models/user.dart';
+import 'package:testorium/generated/l10n.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';

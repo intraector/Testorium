@@ -1,7 +1,7 @@
-import 'package:Testorium/bloc/persons/bloc_persons.dart';
-import 'package:Testorium/data/web/persons/persons_repository_web.dart';
-import 'package:Testorium/generated/l10n.dart';
-import 'package:Testorium/ui/_themes/theme_bloc.dart';
+import 'package:testorium/bloc/persons/bloc_persons.dart';
+import 'package:testorium/data/web/persons/persons_repository_web.dart';
+import 'package:testorium/generated/l10n.dart';
+import 'package:testorium/ui/_themes/theme_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
                 debugShowCheckedModeBanner: false,
                 routeInformationParser: _appRouter.defaultRouteParser(),
                 routerDelegate: _appRouter.delegate(),
-                title: 'Testorium',
+                title: 'testorium',
                 theme: state.theme.material,
                 localizationsDelegates: [
                   S.delegate,

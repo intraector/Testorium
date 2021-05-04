@@ -1,4 +1,4 @@
-import 'package:Testorium/core/models/user.dart';
+import 'package:testorium/core/models/user.dart';
 
 class PersonDetailsConverterWeb {
   Person mapToUser(Map map) {

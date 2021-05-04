@@ -1,5 +1,5 @@
-import 'package:Testorium/generated/l10n.dart';
-import 'package:Testorium/ui/_themes/theme_bloc.dart';
+import 'package:testorium/generated/l10n.dart';
+import 'package:testorium/ui/_themes/theme_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shimmer/shimmer.dart';

@@ -1,4 +1,4 @@
-import 'package:Testorium/services/service_locator.dart';
+import 'package:testorium/services/service_locator.dart';
 
 class SrvcOrchestrator {}
 

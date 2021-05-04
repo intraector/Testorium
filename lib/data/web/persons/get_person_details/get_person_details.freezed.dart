@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'get_person_details.dart';
 
@@ -9,32 +9,32 @@ part of 'get_person_details.dart';
 
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 /// @nodoc
 class _$StateCommandGetPersonDetailsTearOff {
   const _$StateCommandGetPersonDetailsTearOff();
 
-// ignore: unused_element
   _LoadInProgress loadInProgress(double progress) {
     return _LoadInProgress(
       progress,
     );
   }
 
-// ignore: unused_element
   _Data data(Person person) {
     return _Data(
       person,
     );
   }
 
-// ignore: unused_element
   _Error error(
-      {int statusCode,
-      String message = '',
-      String statusMsg = '',
-      String reasonMsg = '',
-      dynamic data,
-      Map<String, dynamic> extra}) {
+      {int? statusCode,
+      String? message = '',
+      String? statusMsg = '',
+      String? reasonMsg = '',
+      dynamic? data = '',
+      Map<String, dynamic>? extra}) {
     return _Error(
       statusCode: statusCode,
       message: message,
@@ -47,40 +47,49 @@ class _$StateCommandGetPersonDetailsTearOff {
 }
 
 /// @nodoc
-// ignore: unused_element
 const $StateCommandGetPersonDetails = _$StateCommandGetPersonDetailsTearOff();
 
 /// @nodoc
 mixin _$StateCommandGetPersonDetails {
   @optionalTypeArgs
-  TResult when<TResult extends Object>({
-    @required TResult loadInProgress(double progress),
-    @required TResult data(Person person),
-    @required
-        TResult error(int statusCode, String message, String statusMsg,
-            String reasonMsg, dynamic data, Map<String, dynamic> extra),
-  });
+  TResult when<TResult extends Object?>({
+    required TResult Function(double progress) loadInProgress,
+    required TResult Function(Person person) data,
+    required TResult Function(
+            int? statusCode,
+            String? message,
+            String? statusMsg,
+            String? reasonMsg,
+            dynamic? data,
+            Map<String, dynamic>? extra)
+        error,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>({
-    TResult loadInProgress(double progress),
-    TResult data(Person person),
-    TResult error(int statusCode, String message, String statusMsg,
-        String reasonMsg, dynamic data, Map<String, dynamic> extra),
-    @required TResult orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(double progress)? loadInProgress,
+    TResult Function(Person person)? data,
+    TResult Function(int? statusCode, String? message, String? statusMsg,
+            String? reasonMsg, dynamic? data, Map<String, dynamic>? extra)?
+        error,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  TResult map<TResult extends Object>({
-    @required TResult loadInProgress(_LoadInProgress value),
-    @required TResult data(_Data value),
-    @required TResult error(_Error value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(_LoadInProgress value) loadInProgress,
+    required TResult Function(_Data value) data,
+    required TResult Function(_Error value) error,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>({
-    TResult loadInProgress(_LoadInProgress value),
-    TResult data(_Data value),
-    TResult error(_Error value),
-    @required TResult orElse(),
-  });
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_LoadInProgress value)? loadInProgress,
+    TResult Function(_Data value)? data,
+    TResult Function(_Error value)? error,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -122,17 +131,21 @@ class __$LoadInProgressCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object progress = freezed,
+    Object? progress = freezed,
   }) {
     return _then(_LoadInProgress(
-      progress == freezed ? _value.progress : progress as double,
+      progress == freezed
+          ? _value.progress
+          : progress // ignore: cast_nullable_to_non_nullable
+              as double,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_LoadInProgress implements _LoadInProgress {
-  const _$_LoadInProgress(this.progress) : assert(progress != null);
+  const _$_LoadInProgress(this.progress);
 
   @override
   final double progress;
@@ -162,29 +175,31 @@ class _$_LoadInProgress implements _LoadInProgress {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object>({
-    @required TResult loadInProgress(double progress),
-    @required TResult data(Person person),
-    @required
-        TResult error(int statusCode, String message, String statusMsg,
-            String reasonMsg, dynamic data, Map<String, dynamic> extra),
+  TResult when<TResult extends Object?>({
+    required TResult Function(double progress) loadInProgress,
+    required TResult Function(Person person) data,
+    required TResult Function(
+            int? statusCode,
+            String? message,
+            String? statusMsg,
+            String? reasonMsg,
+            dynamic? data,
+            Map<String, dynamic>? extra)
+        error,
   }) {
-    assert(loadInProgress != null);
-    assert(data != null);
-    assert(error != null);
     return loadInProgress(progress);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>({
-    TResult loadInProgress(double progress),
-    TResult data(Person person),
-    TResult error(int statusCode, String message, String statusMsg,
-        String reasonMsg, dynamic data, Map<String, dynamic> extra),
-    @required TResult orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(double progress)? loadInProgress,
+    TResult Function(Person person)? data,
+    TResult Function(int? statusCode, String? message, String? statusMsg,
+            String? reasonMsg, dynamic? data, Map<String, dynamic>? extra)?
+        error,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (loadInProgress != null) {
       return loadInProgress(progress);
     }
@@ -193,26 +208,22 @@ class _$_LoadInProgress implements _LoadInProgress {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object>({
-    @required TResult loadInProgress(_LoadInProgress value),
-    @required TResult data(_Data value),
-    @required TResult error(_Error value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_LoadInProgress value) loadInProgress,
+    required TResult Function(_Data value) data,
+    required TResult Function(_Error value) error,
   }) {
-    assert(loadInProgress != null);
-    assert(data != null);
-    assert(error != null);
     return loadInProgress(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>({
-    TResult loadInProgress(_LoadInProgress value),
-    TResult data(_Data value),
-    TResult error(_Error value),
-    @required TResult orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_LoadInProgress value)? loadInProgress,
+    TResult Function(_Data value)? data,
+    TResult Function(_Error value)? error,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (loadInProgress != null) {
       return loadInProgress(this);
     }
@@ -223,9 +234,10 @@ class _$_LoadInProgress implements _LoadInProgress {
 abstract class _LoadInProgress implements StateCommandGetPersonDetails {
   const factory _LoadInProgress(double progress) = _$_LoadInProgress;
 
-  double get progress;
+  double get progress => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  _$LoadInProgressCopyWith<_LoadInProgress> get copyWith;
+  _$LoadInProgressCopyWith<_LoadInProgress> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -249,18 +261,18 @@ class __$DataCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object person = freezed,
+    Object? person = freezed,
   }) {
     return _then(_Data(
-      person == freezed ? _value.person : person as Person,
+      person == freezed
+          ? _value.person
+          : person // ignore: cast_nullable_to_non_nullable
+              as Person,
     ));
   }
 
   @override
   $PersonCopyWith<$Res> get person {
-    if (_value.person == null) {
-      return null;
-    }
     return $PersonCopyWith<$Res>(_value.person, (value) {
       return _then(_value.copyWith(person: value));
     });
@@ -268,8 +280,9 @@ class __$DataCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$_Data implements _Data {
-  const _$_Data(this.person) : assert(person != null);
+  const _$_Data(this.person);
 
   @override
   final Person person;
@@ -298,29 +311,31 @@ class _$_Data implements _Data {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object>({
-    @required TResult loadInProgress(double progress),
-    @required TResult data(Person person),
-    @required
-        TResult error(int statusCode, String message, String statusMsg,
-            String reasonMsg, dynamic data, Map<String, dynamic> extra),
+  TResult when<TResult extends Object?>({
+    required TResult Function(double progress) loadInProgress,
+    required TResult Function(Person person) data,
+    required TResult Function(
+            int? statusCode,
+            String? message,
+            String? statusMsg,
+            String? reasonMsg,
+            dynamic? data,
+            Map<String, dynamic>? extra)
+        error,
   }) {
-    assert(loadInProgress != null);
-    assert(data != null);
-    assert(error != null);
     return data(person);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>({
-    TResult loadInProgress(double progress),
-    TResult data(Person person),
-    TResult error(int statusCode, String message, String statusMsg,
-        String reasonMsg, dynamic data, Map<String, dynamic> extra),
-    @required TResult orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(double progress)? loadInProgress,
+    TResult Function(Person person)? data,
+    TResult Function(int? statusCode, String? message, String? statusMsg,
+            String? reasonMsg, dynamic? data, Map<String, dynamic>? extra)?
+        error,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (data != null) {
       return data(person);
     }
@@ -329,26 +344,22 @@ class _$_Data implements _Data {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object>({
-    @required TResult loadInProgress(_LoadInProgress value),
-    @required TResult data(_Data value),
-    @required TResult error(_Error value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_LoadInProgress value) loadInProgress,
+    required TResult Function(_Data value) data,
+    required TResult Function(_Error value) error,
   }) {
-    assert(loadInProgress != null);
-    assert(data != null);
-    assert(error != null);
     return data(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>({
-    TResult loadInProgress(_LoadInProgress value),
-    TResult data(_Data value),
-    TResult error(_Error value),
-    @required TResult orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_LoadInProgress value)? loadInProgress,
+    TResult Function(_Data value)? data,
+    TResult Function(_Error value)? error,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (data != null) {
       return data(this);
     }
@@ -359,9 +370,9 @@ class _$_Data implements _Data {
 abstract class _Data implements StateCommandGetPersonDetails {
   const factory _Data(Person person) = _$_Data;
 
-  Person get person;
+  Person get person => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  _$DataCopyWith<_Data> get copyWith;
+  _$DataCopyWith<_Data> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -369,12 +380,12 @@ abstract class _$ErrorCopyWith<$Res> {
   factory _$ErrorCopyWith(_Error value, $Res Function(_Error) then) =
       __$ErrorCopyWithImpl<$Res>;
   $Res call(
-      {int statusCode,
-      String message,
-      String statusMsg,
-      String reasonMsg,
-      dynamic data,
-      Map<String, dynamic> extra});
+      {int? statusCode,
+      String? message,
+      String? statusMsg,
+      String? reasonMsg,
+      dynamic? data,
+      Map<String, dynamic>? extra});
 }
 
 /// @nodoc
@@ -389,52 +400,69 @@ class __$ErrorCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object statusCode = freezed,
-    Object message = freezed,
-    Object statusMsg = freezed,
-    Object reasonMsg = freezed,
-    Object data = freezed,
-    Object extra = freezed,
+    Object? statusCode = freezed,
+    Object? message = freezed,
+    Object? statusMsg = freezed,
+    Object? reasonMsg = freezed,
+    Object? data = freezed,
+    Object? extra = freezed,
   }) {
     return _then(_Error(
-      statusCode: statusCode == freezed ? _value.statusCode : statusCode as int,
-      message: message == freezed ? _value.message : message as String,
-      statusMsg: statusMsg == freezed ? _value.statusMsg : statusMsg as String,
-      reasonMsg: reasonMsg == freezed ? _value.reasonMsg : reasonMsg as String,
-      data: data == freezed ? _value.data : data as dynamic,
-      extra: extra == freezed ? _value.extra : extra as Map<String, dynamic>,
+      statusCode: statusCode == freezed
+          ? _value.statusCode
+          : statusCode // ignore: cast_nullable_to_non_nullable
+              as int?,
+      message: message == freezed
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      statusMsg: statusMsg == freezed
+          ? _value.statusMsg
+          : statusMsg // ignore: cast_nullable_to_non_nullable
+              as String?,
+      reasonMsg: reasonMsg == freezed
+          ? _value.reasonMsg
+          : reasonMsg // ignore: cast_nullable_to_non_nullable
+              as String?,
+      data: data == freezed
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as dynamic?,
+      extra: extra == freezed
+          ? _value.extra
+          : extra // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>?,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_Error implements _Error {
   const _$_Error(
       {this.statusCode,
       this.message = '',
       this.statusMsg = '',
       this.reasonMsg = '',
-      this.data,
-      this.extra})
-      : assert(message != null),
-        assert(statusMsg != null),
-        assert(reasonMsg != null);
+      this.data = '',
+      this.extra});
 
   @override
-  final int statusCode;
+  final int? statusCode;
   @JsonKey(defaultValue: '')
   @override
-  final String message;
+  final String? message;
   @JsonKey(defaultValue: '')
   @override
-  final String statusMsg;
+  final String? statusMsg;
   @JsonKey(defaultValue: '')
   @override
-  final String reasonMsg;
+  final String? reasonMsg;
+  @JsonKey(defaultValue: '')
   @override
-  final dynamic data;
+  final dynamic? data;
   @override
-  final Map<String, dynamic> extra;
+  final Map<String, dynamic>? extra;
 
   @override
   String toString() {
@@ -480,29 +508,31 @@ class _$_Error implements _Error {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object>({
-    @required TResult loadInProgress(double progress),
-    @required TResult data(Person person),
-    @required
-        TResult error(int statusCode, String message, String statusMsg,
-            String reasonMsg, dynamic data, Map<String, dynamic> extra),
+  TResult when<TResult extends Object?>({
+    required TResult Function(double progress) loadInProgress,
+    required TResult Function(Person person) data,
+    required TResult Function(
+            int? statusCode,
+            String? message,
+            String? statusMsg,
+            String? reasonMsg,
+            dynamic? data,
+            Map<String, dynamic>? extra)
+        error,
   }) {
-    assert(loadInProgress != null);
-    assert(data != null);
-    assert(error != null);
     return error(statusCode, message, statusMsg, reasonMsg, this.data, extra);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>({
-    TResult loadInProgress(double progress),
-    TResult data(Person person),
-    TResult error(int statusCode, String message, String statusMsg,
-        String reasonMsg, dynamic data, Map<String, dynamic> extra),
-    @required TResult orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(double progress)? loadInProgress,
+    TResult Function(Person person)? data,
+    TResult Function(int? statusCode, String? message, String? statusMsg,
+            String? reasonMsg, dynamic? data, Map<String, dynamic>? extra)?
+        error,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (error != null) {
       return error(statusCode, message, statusMsg, reasonMsg, this.data, extra);
     }
@@ -511,26 +541,22 @@ class _$_Error implements _Error {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object>({
-    @required TResult loadInProgress(_LoadInProgress value),
-    @required TResult data(_Data value),
-    @required TResult error(_Error value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_LoadInProgress value) loadInProgress,
+    required TResult Function(_Data value) data,
+    required TResult Function(_Error value) error,
   }) {
-    assert(loadInProgress != null);
-    assert(data != null);
-    assert(error != null);
     return error(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>({
-    TResult loadInProgress(_LoadInProgress value),
-    TResult data(_Data value),
-    TResult error(_Error value),
-    @required TResult orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_LoadInProgress value)? loadInProgress,
+    TResult Function(_Data value)? data,
+    TResult Function(_Error value)? error,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (error != null) {
       return error(this);
     }
@@ -540,19 +566,19 @@ class _$_Error implements _Error {
 
 abstract class _Error implements StateCommandGetPersonDetails {
   const factory _Error(
-      {int statusCode,
-      String message,
-      String statusMsg,
-      String reasonMsg,
-      dynamic data,
-      Map<String, dynamic> extra}) = _$_Error;
+      {int? statusCode,
+      String? message,
+      String? statusMsg,
+      String? reasonMsg,
+      dynamic? data,
+      Map<String, dynamic>? extra}) = _$_Error;
 
-  int get statusCode;
-  String get message;
-  String get statusMsg;
-  String get reasonMsg;
-  dynamic get data;
-  Map<String, dynamic> get extra;
+  int? get statusCode => throw _privateConstructorUsedError;
+  String? get message => throw _privateConstructorUsedError;
+  String? get statusMsg => throw _privateConstructorUsedError;
+  String? get reasonMsg => throw _privateConstructorUsedError;
+  dynamic? get data => throw _privateConstructorUsedError;
+  Map<String, dynamic>? get extra => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  _$ErrorCopyWith<_Error> get copyWith;
+  _$ErrorCopyWith<_Error> get copyWith => throw _privateConstructorUsedError;
 }

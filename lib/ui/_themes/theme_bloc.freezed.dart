@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'theme_bloc.dart';
 
@@ -9,12 +9,14 @@ part of 'theme_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 /// @nodoc
 class _$StateBlocThemeTearOff {
   const _$StateBlocThemeTearOff();
 
-// ignore: unused_element
-  _Current call({@required AppTheme theme}) {
+  _Current call({required AppTheme theme}) {
     return _Current(
       theme: theme,
     );
@@ -22,15 +24,15 @@ class _$StateBlocThemeTearOff {
 }
 
 /// @nodoc
-// ignore: unused_element
 const $StateBlocTheme = _$StateBlocThemeTearOff();
 
 /// @nodoc
 mixin _$StateBlocTheme {
-  AppTheme get theme;
+  AppTheme get theme => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $StateBlocThemeCopyWith<StateBlocTheme> get copyWith;
+  $StateBlocThemeCopyWith<StateBlocTheme> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -52,10 +54,13 @@ class _$StateBlocThemeCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object theme = freezed,
+    Object? theme = freezed,
   }) {
     return _then(_value.copyWith(
-      theme: theme == freezed ? _value.theme : theme as AppTheme,
+      theme: theme == freezed
+          ? _value.theme
+          : theme // ignore: cast_nullable_to_non_nullable
+              as AppTheme,
     ));
   }
 }
@@ -80,17 +85,21 @@ class __$CurrentCopyWithImpl<$Res> extends _$StateBlocThemeCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object theme = freezed,
+    Object? theme = freezed,
   }) {
     return _then(_Current(
-      theme: theme == freezed ? _value.theme : theme as AppTheme,
+      theme: theme == freezed
+          ? _value.theme
+          : theme // ignore: cast_nullable_to_non_nullable
+              as AppTheme,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_Current implements _Current {
-  const _$_Current({@required this.theme}) : assert(theme != null);
+  const _$_Current({required this.theme});
 
   @override
   final AppTheme theme;
@@ -119,49 +128,52 @@ class _$_Current implements _Current {
 }
 
 abstract class _Current implements StateBlocTheme {
-  const factory _Current({@required AppTheme theme}) = _$_Current;
+  const factory _Current({required AppTheme theme}) = _$_Current;
 
   @override
-  AppTheme get theme;
+  AppTheme get theme => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$CurrentCopyWith<_Current> get copyWith;
+  _$CurrentCopyWith<_Current> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 class _$EventBlocThemeTearOff {
   const _$EventBlocThemeTearOff();
 
-// ignore: unused_element
   _EventMain main() {
     return const _EventMain();
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $EventBlocTheme = _$EventBlocThemeTearOff();
 
 /// @nodoc
 mixin _$EventBlocTheme {
   @optionalTypeArgs
-  TResult when<TResult extends Object>({
-    @required TResult main(),
-  });
+  TResult when<TResult extends Object?>({
+    required TResult Function() main,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>({
-    TResult main(),
-    @required TResult orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? main,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  TResult map<TResult extends Object>({
-    @required TResult main(_EventMain value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(_EventMain value) main,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>({
-    TResult main(_EventMain value),
-    @required TResult orElse(),
-  });
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_EventMain value)? main,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -199,6 +211,7 @@ class __$EventMainCopyWithImpl<$Res> extends _$EventBlocThemeCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$_EventMain implements _EventMain {
   const _$_EventMain();
 
@@ -217,20 +230,18 @@ class _$_EventMain implements _EventMain {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object>({
-    @required TResult main(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() main,
   }) {
-    assert(main != null);
     return main();
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object>({
-    TResult main(),
-    @required TResult orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? main,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (main != null) {
       return main();
     }
@@ -239,20 +250,18 @@ class _$_EventMain implements _EventMain {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object>({
-    @required TResult main(_EventMain value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_EventMain value) main,
   }) {
-    assert(main != null);
     return main(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object>({
-    TResult main(_EventMain value),
-    @required TResult orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_EventMain value)? main,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (main != null) {
       return main(this);
     }

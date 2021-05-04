@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'person.dart';
 
@@ -8,6 +8,10 @@ part of 'person.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Person _$PersonFromJson(Map<String, dynamic> json) {
   return _Person.fromJson(json);
 }
@@ -16,16 +20,15 @@ Person _$PersonFromJson(Map<String, dynamic> json) {
 class _$PersonTearOff {
   const _$PersonTearOff();
 
-// ignore: unused_element
   _Person call(
       {int id = 0,
       String name = '',
       String status = '',
       String species = '',
       String gender = '',
-      @CustomConverter() String origin,
-      @CustomConverter() String location,
-      String image}) {
+      @CustomConverter() required String origin,
+      @CustomConverter() required String location,
+      String? image}) {
     return _Person(
       id: id,
       name: name,
@@ -38,32 +41,30 @@ class _$PersonTearOff {
     );
   }
 
-// ignore: unused_element
   Person fromJson(Map<String, Object> json) {
     return Person.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Person = _$PersonTearOff();
 
 /// @nodoc
 mixin _$Person {
-  int get id;
-  String get name;
-  String get status;
-  String get species;
-  String get gender;
+  int get id => throw _privateConstructorUsedError;
+  String get name => throw _privateConstructorUsedError;
+  String get status => throw _privateConstructorUsedError;
+  String get species => throw _privateConstructorUsedError;
+  String get gender => throw _privateConstructorUsedError;
   @CustomConverter()
-  String get origin;
+  String get origin => throw _privateConstructorUsedError;
   @CustomConverter()
-  String get location;
-  String get image;
+  String get location => throw _privateConstructorUsedError;
+  String? get image => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $PersonCopyWith<Person> get copyWith;
+  $PersonCopyWith<Person> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -78,7 +79,7 @@ abstract class $PersonCopyWith<$Res> {
       String gender,
       @CustomConverter() String origin,
       @CustomConverter() String location,
-      String image});
+      String? image});
 }
 
 /// @nodoc
@@ -91,24 +92,48 @@ class _$PersonCopyWithImpl<$Res> implements $PersonCopyWith<$Res> {
 
   @override
   $Res call({
-    Object id = freezed,
-    Object name = freezed,
-    Object status = freezed,
-    Object species = freezed,
-    Object gender = freezed,
-    Object origin = freezed,
-    Object location = freezed,
-    Object image = freezed,
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? status = freezed,
+    Object? species = freezed,
+    Object? gender = freezed,
+    Object? origin = freezed,
+    Object? location = freezed,
+    Object? image = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed ? _value.id : id as int,
-      name: name == freezed ? _value.name : name as String,
-      status: status == freezed ? _value.status : status as String,
-      species: species == freezed ? _value.species : species as String,
-      gender: gender == freezed ? _value.gender : gender as String,
-      origin: origin == freezed ? _value.origin : origin as String,
-      location: location == freezed ? _value.location : location as String,
-      image: image == freezed ? _value.image : image as String,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      status: status == freezed
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as String,
+      species: species == freezed
+          ? _value.species
+          : species // ignore: cast_nullable_to_non_nullable
+              as String,
+      gender: gender == freezed
+          ? _value.gender
+          : gender // ignore: cast_nullable_to_non_nullable
+              as String,
+      origin: origin == freezed
+          ? _value.origin
+          : origin // ignore: cast_nullable_to_non_nullable
+              as String,
+      location: location == freezed
+          ? _value.location
+          : location // ignore: cast_nullable_to_non_nullable
+              as String,
+      image: image == freezed
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -126,7 +151,7 @@ abstract class _$PersonCopyWith<$Res> implements $PersonCopyWith<$Res> {
       String gender,
       @CustomConverter() String origin,
       @CustomConverter() String location,
-      String image});
+      String? image});
 }
 
 /// @nodoc
@@ -140,31 +165,54 @@ class __$PersonCopyWithImpl<$Res> extends _$PersonCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object id = freezed,
-    Object name = freezed,
-    Object status = freezed,
-    Object species = freezed,
-    Object gender = freezed,
-    Object origin = freezed,
-    Object location = freezed,
-    Object image = freezed,
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? status = freezed,
+    Object? species = freezed,
+    Object? gender = freezed,
+    Object? origin = freezed,
+    Object? location = freezed,
+    Object? image = freezed,
   }) {
     return _then(_Person(
-      id: id == freezed ? _value.id : id as int,
-      name: name == freezed ? _value.name : name as String,
-      status: status == freezed ? _value.status : status as String,
-      species: species == freezed ? _value.species : species as String,
-      gender: gender == freezed ? _value.gender : gender as String,
-      origin: origin == freezed ? _value.origin : origin as String,
-      location: location == freezed ? _value.location : location as String,
-      image: image == freezed ? _value.image : image as String,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      status: status == freezed
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as String,
+      species: species == freezed
+          ? _value.species
+          : species // ignore: cast_nullable_to_non_nullable
+              as String,
+      gender: gender == freezed
+          ? _value.gender
+          : gender // ignore: cast_nullable_to_non_nullable
+              as String,
+      origin: origin == freezed
+          ? _value.origin
+          : origin // ignore: cast_nullable_to_non_nullable
+              as String,
+      location: location == freezed
+          ? _value.location
+          : location // ignore: cast_nullable_to_non_nullable
+              as String,
+      image: image == freezed
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Person extends _Person {
   const _$_Person(
       {this.id = 0,
@@ -172,15 +220,10 @@ class _$_Person extends _Person {
       this.status = '',
       this.species = '',
       this.gender = '',
-      @CustomConverter() this.origin,
-      @CustomConverter() this.location,
+      @CustomConverter() required this.origin,
+      @CustomConverter() required this.location,
       this.image})
-      : assert(id != null),
-        assert(name != null),
-        assert(status != null),
-        assert(species != null),
-        assert(gender != null),
-        super._();
+      : super._();
 
   factory _$_Person.fromJson(Map<String, dynamic> json) =>
       _$_$_PersonFromJson(json);
@@ -207,7 +250,7 @@ class _$_Person extends _Person {
   @CustomConverter()
   final String location;
   @override
-  final String image;
+  final String? image;
 
   @override
   String toString() {
@@ -262,38 +305,38 @@ class _$_Person extends _Person {
 }
 
 abstract class _Person extends Person {
-  const _Person._() : super._();
   const factory _Person(
       {int id,
       String name,
       String status,
       String species,
       String gender,
-      @CustomConverter() String origin,
-      @CustomConverter() String location,
-      String image}) = _$_Person;
+      @CustomConverter() required String origin,
+      @CustomConverter() required String location,
+      String? image}) = _$_Person;
+  const _Person._() : super._();
 
   factory _Person.fromJson(Map<String, dynamic> json) = _$_Person.fromJson;
 
   @override
-  int get id;
+  int get id => throw _privateConstructorUsedError;
   @override
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
-  String get status;
+  String get status => throw _privateConstructorUsedError;
   @override
-  String get species;
+  String get species => throw _privateConstructorUsedError;
   @override
-  String get gender;
-  @override
-  @CustomConverter()
-  String get origin;
+  String get gender => throw _privateConstructorUsedError;
   @override
   @CustomConverter()
-  String get location;
+  String get origin => throw _privateConstructorUsedError;
   @override
-  String get image;
+  @CustomConverter()
+  String get location => throw _privateConstructorUsedError;
+  @override
+  String? get image => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$PersonCopyWith<_Person> get copyWith;
+  _$PersonCopyWith<_Person> get copyWith => throw _privateConstructorUsedError;
 }

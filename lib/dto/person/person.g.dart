@@ -10,14 +10,14 @@ part of 'person.dart';
 
 _$_Person _$_$_PersonFromJson(Map<String, dynamic> json) {
   return _$_Person(
-    id: json['id'] as int ?? 0,
-    name: json['name'] as String ?? '',
-    status: json['status'] as String ?? '',
-    species: json['species'] as String ?? '',
-    gender: json['gender'] as String ?? '',
+    id: json['id'] as int? ?? 0,
+    name: json['name'] as String? ?? '',
+    status: json['status'] as String? ?? '',
+    species: json['species'] as String? ?? '',
+    gender: json['gender'] as String? ?? '',
     origin: const CustomConverter().fromJson(json['origin'] as Map),
     location: const CustomConverter().fromJson(json['location'] as Map),
-    image: json['image'] as String,
+    image: json['image'] as String?,
   );
 }
 

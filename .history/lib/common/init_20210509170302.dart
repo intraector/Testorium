@@ -13,10 +13,14 @@ class Init extends StatefulWidget {
 class _InitState extends State<Init> {
   @override
   void didUpdateWidget(covariant Init oldWidget) {
-    if (widget != oldWidget) {
-      _init(context);
-    }
+    // TODO: implement didUpdateWidget
     super.didUpdateWidget(oldWidget);
+  }
+
+  @override
+  void didChangeDependencies() {
+    _init(context);
+    super.didChangeDependencies();
   }
 
   @override

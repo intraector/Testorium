@@ -7,44 +7,33 @@ import 'package:dio/dio.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:logger/logger.dart';
-part 'get_person_details.freezed.dart';
+part 'get_persons.freezed.dart';
 
 part 'generate_error_state.dart';
 
-class CubitGetPersonDetails extends Cubit<StateCommandGetPersonDetails> {
-  CubitGetPersonDetails(int id)
-      : super(
-          const StateCommandGetPersonDetails.loadInProgress(0.0),
-        ) {
-    _run(id);
+class CubitGetPersons extends Cubit<StateCommandGetPersons> {
+  CubitGetPersons() : super(const StateCommandGetPersons.loadInProgress(0.0)) {
+    _run();
   }
 
   final _logger = Logger();
 
-  Future<void> _run(int id) async {
+  Future<void> _run() async {
     try {
       final response = await appDio(runtimeType).get(
-        '/api/character?$id',
+        '/api/character?page=1',
         onReceiveProgress: (recieved, total) {
-          emit(StateCommandGetPersonDetails.loadInProgress(recieved / total));
+          emit(StateCommandGetPersons.loadInProgress(recieved / total));
         },
       );
       if (response.statusCode == 200) {
         final results = response.data?['results'];
         if (results != null && results is List) {
-          var indexFound = results.indexWhere(
-            (item) => (item as Map)['id'] == id,
-          );
-          if (indexFound >= 0) {
-            var _person = Person.fromJson(results[indexFound]);
-            emit(StateCommandGetPersonDetails.data(_person));
-          } else {
-            _logger.e("Error in $runtimeType | user not found");
-            emit(StateCommandGetPersonDetails.error(message: S.current.errorGeneral));
-          }
+          var _persons = results.map<Person>((item) => Person.fromJson(item)).toList();
+          emit(StateCommandGetPersons.data(_persons));
         } else {
           _logger.e("Error in $runtimeType | data is ${response.data.runtimeType}");
-          emit(StateCommandGetPersonDetails.error(message: S.current.errorGeneral));
+          emit(StateCommandGetPersons.error(message: S.current.errorGeneral));
         }
       }
     } on DioError catch (error) {
@@ -57,10 +46,10 @@ class CubitGetPersonDetails extends Cubit<StateCommandGetPersonDetails> {
 }
 
 @freezed
-class StateCommandGetPersonDetails with _$StateCommandGetPersonDetails {
-  const factory StateCommandGetPersonDetails.loadInProgress(double progress) = _LoadInProgress;
-  const factory StateCommandGetPersonDetails.data(Person person) = _Data;
-  const factory StateCommandGetPersonDetails.error({
+class StateCommandGetPersons with _$StateCommandGetPersons {
+  const factory StateCommandGetPersons.loadInProgress(double progress) = _LoadInProgress;
+  const factory StateCommandGetPersons.data(List<Person> list) = _Data;
+  const factory StateCommandGetPersons.error({
     int? statusCode,
     @Default('') String? message,
     @Default('') String? statusMsg,
@@ -68,4 +57,11 @@ class StateCommandGetPersonDetails with _$StateCommandGetPersonDetails {
     @Default('') dynamic? data,
     Map<String, dynamic>? extra,
   }) = _Error;
+}
+
+class UserOrError {
+  UserOrError({this.user, this.error});
+  factory UserOrError.user() => UserOrError();
+  String? user = '';
+  String? error = 'error';
 }

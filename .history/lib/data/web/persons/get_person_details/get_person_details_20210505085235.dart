@@ -11,8 +11,8 @@ part 'get_person_details.freezed.dart';
 
 part 'generate_error_state.dart';
 
-class CubitGetPersonDetails extends Cubit<StateCommandGetPersonDetails> {
-  CubitGetPersonDetails(int id)
+class CommandGetPersonDetails extends Cubit<StateCommandGetPersonDetails> {
+  CommandGetPersonDetails(int id)
       : super(
           const StateCommandGetPersonDetails.loadInProgress(0.0),
         ) {

@@ -20,6 +20,11 @@ class _InitState extends State<Init> {
   }
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+  }
+
+  @override
   Widget build(BuildContext context) => widget.child;
 }
 
